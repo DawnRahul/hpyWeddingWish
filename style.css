@@ -1,0 +1,162 @@
+
+body{
+    margin: 0;
+    background-color: rgb(225 225 210);
+}
+
+#couple-image {
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 0px 14px rgba(307,210,104,0.8));
+}
+
+#header, #footer, #video {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#header {
+    flex-basis: 50%;
+    /* background-color: red; */
+}
+
+#video {
+    flex-basis: 30%;
+    /* background-color: blue; */
+}
+
+#footer {
+    flex-basis: 20%;
+    /* background-color: green; */
+}
+
+.couple-image-div {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading {
+    font-family: 'Lovers Quarrel','Parisienne','Sacramento', cursive;
+    font-size: 32px;
+    color: #2da78b;
+    text-align: center;
+    text-shadow: 2px 2px 4px #9b9696;
+    word-spacing: 12px;
+    letter-spacing: 1.5px;
+    margin: 0px auto -12px auto;
+}
+
+.heading-div {
+    position: absolute;
+    width: 100vw;
+    bottom: 120px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.rose-background {
+    background-image: url("images/red-rose.png");
+    background-size: 100% 100vh;
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.starter {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 10;
+    opacity: 1;
+}
+
+.slide-1, .slide-2 {
+    flex-basis: 50%;
+    height: 100%;
+    width: 50vw;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: transform 14s;
+    background-color: #f7ffa7;
+}
+
+/* .slide-1 {
+    background-color: blue;
+}  */
+
+.slide-1 img {
+    position: absolute;
+    right: -50px;
+}
+
+/* .slide-2 {
+    background-color: rgb(81, 255, 0);
+} */
+
+.slide-2 img {
+    position: absolute;
+    left: -50px;
+}
+
+.video {
+    width: 320px;
+    height: auto;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video-box video {
+    outline-style: none;
+    box-shadow: -1px 6px 8px 3px #515151;
+    border-radius: 50px;
+}
+
+
+
+@media only screen and (max-height: 600px){
+
+    .heading {
+        word-spacing: 36px;
+    }
+
+    .video {
+        width: 300px;
+        height: auto;
+    }
+}
