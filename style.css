@@ -96,6 +96,7 @@ body{
     display: flex;
     z-index: 10;
     opacity: 1;
+    overflow: hidden;
 }
 
 .slide-1, .slide-2 {
